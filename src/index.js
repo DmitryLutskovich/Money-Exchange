@@ -11,7 +11,7 @@ module.exports = function makeExchange(currency) {
 		let count=0;
 		while (currency - numbercoins[coin] >= 0) {
 			count++;
-			currency -= numbercoins[coin];
+			currency =currency- numbercoins[coin];
 		}
 		if (count > 0) {
 			result[coin] = count;
